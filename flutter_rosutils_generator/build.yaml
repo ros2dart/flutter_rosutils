@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      flutter_rosutils_generator|rosutils_builder:
+        enabled: true
+
+builders:
+  rosutils_builder:
+    target: ":flutter_rosutils_generator"
+    import: "package:flutter_rosutils_generator/builder.dart"
+    builder_factories: ["rosutilsBuilder"]
+    build_extensions: { ".dart": [".g.part"] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
