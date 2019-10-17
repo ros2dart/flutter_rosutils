@@ -1,6 +1,6 @@
 name: flutter_rosutils_generator
 description: A Flutter package that helps to generate boilerplate code for roslib applications
-version: 1.0.1
+version: 0.0.1
 author: Tim Whiting <tim.a.whiting@gmail.com>
 homepage: https://github.com/TimWhiting/flutter_rosutils
 
@@ -13,10 +13,14 @@ dependencies:
   build: ^1.0.2
   source_gen: ^0.9.3
   rxdart: ^0.20.0
-  magical_widget: ^1.0.0
+  flutter_rosutils: ^0.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   build_test: ^0.10.4
   build_runner: ^1.1.2
+
+dependency_overrides:
+  flutter_rosutils:
+    path: ../flutter_rosutils
