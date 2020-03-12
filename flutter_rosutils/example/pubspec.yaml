@@ -17,10 +17,10 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  provider: any
   flutter:
     sdk: flutter
   flutter_rosutils: any
-  roslib: any
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -29,15 +29,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_rosutils_generator: any
 
 dependency_overrides:
   flutter_rosutils:
     path: ../../flutter_rosutils
-  flutter_rosutils_generator:
-    path: ../../flutter_rosutils_generator
-  roslib:
-    url: git@github.com:TimWhiting/roslib
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

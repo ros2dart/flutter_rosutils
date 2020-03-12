@@ -1,13 +1,15 @@
 name: flutter_rosutils
-description: A Flutter package that helps to generate boilerplate code for roslib applications
-version: 0.0.1
-author: Tim Whiting <tim.a.whiting@gmail.com>
+description: A Flutter package that helps to create a synchronized ROS flutter application
+version: 0.0.2
 homepage: https://github.com/TimWhiting/flutter_rosutils
 
 environment:
-  sdk: ">=2.6.0-dev.7.0 <3.0.0"
+  sdk: ">=2.6.0 <3.0.0"
 
 dependencies:
+  # Currently depending on my fork of roslib since the latest changes haven't made it to pub in the main fork
+  roslib: ^0.0.3
+  rxdart: ^0.23.1
   flutter:
     sdk: flutter
 
